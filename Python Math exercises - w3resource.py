@@ -8,6 +8,9 @@ import numpy as np
 # grados = input("Grados: ")
 # radianes = float(grados) * math.pi/180
 # print("Radianes: ", radianes)
+def degree_to_radian(grados):
+    return (float(grados) * math.pi/180)
+
 
 # #Math exercise 2 convert radian to degree
 # print("Ejercicio 2: radianes a grados")
@@ -64,8 +67,15 @@ import numpy as np
 # plt.show()
 
 #Math exercise 7 calculate arc length of an angle
-print("Ejercicio 7: longitud del arco de un ángulo")
-diametro = int(input("Diametro: "))
+# print("Ejercicio 7: longitud del arco de un ángulo")
+# diametro = int(input("Diametro: "))
+# angulo = int(input("Ángulo: "))
+# longitud = degree_to_radian(angulo) * diametro/2
+# print("Longitud: ", longitud)
+
+#Math exercise 8 calculate the area of the sector
+print("Ejercicio 8: area de un sector")
+radio = int(input("Radio: "))
 angulo = int(input("Ángulo: "))
-longitud = float(angulo) * math.pi/180 * diametro/2
-print("Longitud: ", longitud)
+area =  radio ** 2 * degree_to_radian(angulo) /2
+print("Area: ", area)
