@@ -41,24 +41,31 @@ import numpy as np
 # print("Volumen",volumen)
 
 #Math exercise 6 calculate surface volume and area of a sphere
-print("Ejercicio 6: volumen y area de una esfera")
-radio = float(input("Radio: "))
-volumen = 4/3 * math.pi * radio**3
-area = 4 * math.pi * radio ** 2
-print("Area", area)
-print("Volumen",volumen)
+# print("Ejercicio 6: volumen y area de una esfera")
+# radio = float(input("Radio: "))
+# volumen = 4/3 * math.pi * radio**3
+# area = 4 * math.pi * radio ** 2
+# print("Area", area)
+# print("Volumen",volumen)
 
-xpoints = 0
-yvolumen = 0
-yarea = 0
+# xpoints = 0
+# yvolumen = 0
+# yarea = 0
 
-for x in range(50):
-    xpoints = np.append(xpoints,x)
-    volumen = 4/3 * math.pi * x**3
-    area = 4 * math.pi * x ** 2
-    yvolumen = np.append(yvolumen,volumen)
-    yarea = np.append(yarea,area)
+# for x in range(50):
+#     xpoints = np.append(xpoints,x)
+#     volumen = 4/3 * math.pi * x**3
+#     area = 4 * math.pi * x ** 2
+#     yvolumen = np.append(yvolumen,volumen)
+#     yarea = np.append(yarea,area)
 
-plt.plot(xpoints, yvolumen)
-plt.plot(xpoints, yarea)
-plt.show()
+# plt.plot(xpoints, yvolumen)
+# plt.plot(xpoints, yarea)
+# plt.show()
+
+#Math exercise 7 calculate arc length of an angle
+print("Ejercicio 7: longitud del arco de un ángulo")
+diametro = int(input("Diametro: "))
+angulo = int(input("Ángulo: "))
+longitud = float(angulo) * math.pi/180 * diametro/2
+print("Longitud: ", longitud)
