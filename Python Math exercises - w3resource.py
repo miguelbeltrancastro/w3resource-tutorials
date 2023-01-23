@@ -1,5 +1,7 @@
 #https://www.w3resource.com/python-exercises/math/
 import math
+import matplotlib.pyplot as plt
+import numpy as np
 
 # #Math exercise 1 convert degree to radian
 # print("Ejercicio 1: grados a radianes")
@@ -45,3 +47,18 @@ volumen = 4/3 * math.pi * radio**3
 area = 4 * math.pi * radio ** 2
 print("Area", area)
 print("Volumen",volumen)
+
+xpoints = 0
+yvolumen = 0
+yarea = 0
+
+for x in range(50):
+    xpoints = np.append(xpoints,x)
+    volumen = 4/3 * math.pi * x**3
+    area = 4 * math.pi * x ** 2
+    yvolumen = np.append(yvolumen,volumen)
+    yarea = np.append(yarea,area)
+
+plt.plot(xpoints, yvolumen)
+plt.plot(xpoints, yarea)
+plt.show()
