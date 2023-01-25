@@ -89,9 +89,12 @@ def degree_to_radian(grados):
 # plt.show()
 
 #Math exercise 9 calculate the discriminant value
-print("Ejercicio 9: valor discriminante")
-x = int(input("X: "))
-y = int(input("Y: "))
-z = int(input("Z: "))
-D = y**2-4*x*z
-print("Discriminante: ", D)
+# print("Ejercicio 9: valor discriminante")
+# x = int(input("X: "))
+# y = int(input("Y: "))
+# z = int(input("Z: "))
+# D = y**2-4*x*z
+# print("Discriminante: ", D)
+
+#Math exercise 10 find the smallest multiple of the first n numbers. Also, display the factors
+print("Ejercicio 10: ")
