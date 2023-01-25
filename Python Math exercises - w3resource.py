@@ -89,4 +89,9 @@ def degree_to_radian(grados):
 # plt.show()
 
 #Math exercise 9 calculate the discriminant value
-print("Ejercicio 9: ")
+print("Ejercicio 9: valor discriminante")
+x = int(input("X: "))
+y = int(input("Y: "))
+z = int(input("Z: "))
+D = y**2-4*x*z
+print("Discriminante: ", D)
