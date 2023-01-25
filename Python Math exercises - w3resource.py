@@ -74,8 +74,19 @@ def degree_to_radian(grados):
 # print("Longitud: ", longitud)
 
 #Math exercise 8 calculate the area of the sector
-print("Ejercicio 8: area de un sector")
-radio = int(input("Radio: "))
-angulo = int(input("Ángulo: "))
-area =  radio ** 2 * degree_to_radian(angulo) /2
-print("Area: ", area)
+# print("Ejercicio 8: area de un sector")
+# radio = int(input("Radio: "))
+# angulo = int(input("Ángulo: "))
+# area =  radio ** 2 * degree_to_radian(angulo) /2
+# print("Area: ", area)
+# xpoints = 0
+# yarea = 0
+# for x in range(360):
+#     xpoints = np.append(xpoints,x)
+#     area =  radio ** 2 * degree_to_radian(x) /2
+#     yarea = np.append(yarea,area)
+# plt.plot(xpoints, yarea)
+# plt.show()
+
+#Math exercise 9 calculate the discriminant value
+print("Ejercicio 9: ")
